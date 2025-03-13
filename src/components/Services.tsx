@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Plane, Award, Building, Hearts, Clock, Globe } from 'lucide-react';
+import { Plane, Award, Building, Heart, Clock, Globe } from 'lucide-react';
 
 const ServicesData = [
   {
@@ -14,7 +14,7 @@ const ServicesData = [
     description: 'Impress clients and ensure executives arrive refreshed with our premium corporate service.',
   },
   {
-    icon: <Hearts className="h-10 w-10 text-gold-500" />,
+    icon: <Heart className="h-10 w-10 text-gold-500" />,
     title: 'Wedding Service',
     description: 'Make your special day even more memorable with our elegant wedding transportation.',
   },
