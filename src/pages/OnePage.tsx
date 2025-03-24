@@ -5,7 +5,6 @@ import Hero from '../components/Hero';
 import Services from '../components/Services';
 import FleetPreview from '../components/Fleet';
 import Testimonials from '../components/Testimonials';
-import AboutSection from '../components/AboutSection';
 import FAQSection from '../components/FAQSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
@@ -73,9 +72,6 @@ const OnePage = () => {
       
       {/* Hero Section */}
       <Hero />
-      
-      {/* About Section */}
-      <AboutSection />
       
       {/* Services Section */}
       <Services />
