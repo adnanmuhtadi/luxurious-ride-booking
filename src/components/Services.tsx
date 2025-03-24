@@ -1,37 +1,37 @@
 
 import React from 'react';
-import { Plane, Award, Building, Heart, Clock, Globe } from 'lucide-react';
+import { Plane, Award, Building, Heart, Clock, Globe, Car, Users, MapPin } from 'lucide-react';
 
 const ServicesData = [
   {
     icon: <Plane className="h-10 w-10 text-gold-500" />,
     title: 'Airport Transfers',
-    description: 'Reliable and punctual airport pickup and drop-off services across all major airports.',
+    description: 'Reliable airport transfers to all major UK airports including Heathrow, Gatwick, Luton, Stansted, London City, and Birmingham.',
+  },
+  {
+    icon: <Car className="h-10 w-10 text-gold-500" />,
+    title: 'Local Journeys',
+    description: 'Professional chauffeur service for journeys within Hemel Hempstead, Berkhamsted, Tring and the surrounding areas.',
   },
   {
     icon: <Building className="h-10 w-10 text-gold-500" />,
     title: 'Corporate Travel',
-    description: 'Impress clients and ensure executives arrive refreshed with our premium corporate service.',
+    description: 'Dedicated service for business professionals with meet and greet service, Wi-Fi equipped vehicles, and professional drivers.',
   },
   {
     icon: <Heart className="h-10 w-10 text-gold-500" />,
     title: 'Wedding Service',
-    description: 'Make your special day even more memorable with our elegant wedding transportation.',
+    description: 'Make your special day perfect with our elegant wedding transportation services. Luxury vehicles with professional chauffeurs.',
   },
   {
-    icon: <Clock className="h-10 w-10 text-gold-500" />,
-    title: 'Hourly Hire',
-    description: 'Flexible hourly booking for meetings, events, or city tours with dedicated chauffeurs.',
+    icon: <MapPin className="h-10 w-10 text-gold-500" />,
+    title: 'Seaport Transfers',
+    description: 'Comfortable and reliable transportation to and from all major UK seaports, including Southampton, Dover, and Portsmouth.',
   },
   {
-    icon: <Award className="h-10 w-10 text-gold-500" />,
-    title: 'VIP Services',
-    description: 'Exclusive transportation solutions for celebrities, executives, and distinguished guests.',
-  },
-  {
-    icon: <Globe className="h-10 w-10 text-gold-500" />,
-    title: 'City Tours',
-    description: 'Private guided tours of the city with knowledgeable chauffeurs and luxurious comfort.',
+    icon: <Users className="h-10 w-10 text-gold-500" />,
+    title: 'Group Travel',
+    description: 'Perfect for larger groups with our spacious vehicles. Ideal for family trips, corporate events, or group excursions.',
   },
 ];
 
@@ -40,9 +40,9 @@ const Services = () => {
     <section className="py-24 bg-luxury-dark">
       <div className="luxury-container">
         <div className="text-center mb-16">
-          <h2 className="section-heading">Premium Services</h2>
+          <h2 className="section-heading">Our Premium Services</h2>
           <p className="section-subheading">
-            Experience transportation excellence with our range of tailored premium services designed to meet your every need.
+            Professional chauffeur services in Hemel Hempstead and surrounding areas, offering quality, reliability, and comfort.
           </p>
         </div>
 

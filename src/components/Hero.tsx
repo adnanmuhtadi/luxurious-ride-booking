@@ -49,16 +49,16 @@ const Hero = () => {
       <div className="relative z-10 flex h-full items-center justify-center text-center">
         <div className="luxury-container pt-20 md:pt-0">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight animate-fade-in">
-            <span className="gold-gradient-text">Luxury </span>
-            <span className="text-white">Transportation</span>
+            <span className="gold-gradient-text">Professional </span>
+            <span className="text-white">Chauffeur</span>
             <br />
-            <span className="text-white">For The </span>
-            <span className="gold-gradient-text">Discerning</span>
+            <span className="text-white">Service in </span>
+            <span className="gold-gradient-text">Hemel Hempstead</span>
           </h1>
           
           <p className="mx-auto max-w-2xl text-lg md:text-xl text-muted-foreground mb-10 animate-fade-in">
-            Experience unparalleled comfort and elegance with our premium executive car service.
-            Your journey deserves nothing less than perfection.
+            Providing executive car services and airport transfers in Hemel Hempstead, 
+            Berkhamsted, Tring and surrounding areas. Reliable, punctual, and professional.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
