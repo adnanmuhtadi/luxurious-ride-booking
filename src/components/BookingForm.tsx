@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Calendar, Clock, MapPin, Users, Car, ChevronDown, Check } from 'lucide-react';
 import { toast } from 'sonner';
@@ -51,10 +50,19 @@ const BookingForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
+    // In a real implementation, you would send this data to your backend
+    const bookingData = {
+      ...formData,
+      confirmationEmail: 'adnanmuhtadi@hotmail.com' // Set the confirmation email
+    };
+    
+    console.log('Sending booking to:', bookingData.confirmationEmail);
+    console.log('Booking data:', bookingData);
+    
     // Simulate API call
     setTimeout(() => {
       setIsSubmitting(false);
-      toast.success('Booking request submitted successfully! We will contact you shortly to confirm your reservation.');
+      toast.success('Booking request submitted successfully! A confirmation has been sent to our team.');
       
       // Reset form
       setFormData({
