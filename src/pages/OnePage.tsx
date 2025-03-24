@@ -3,7 +3,6 @@ import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Services from '../components/Services';
-import FleetPreview from '../components/Fleet';
 import Testimonials from '../components/Testimonials';
 import FAQSection from '../components/FAQSection';
 import ContactSection from '../components/ContactSection';
@@ -75,9 +74,6 @@ const OnePage = () => {
       
       {/* Services Section */}
       <Services />
-      
-      {/* Fleet Section */}
-      <FleetPreview />
       
       {/* Testimonials Section */}
       <Testimonials />

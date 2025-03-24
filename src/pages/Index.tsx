@@ -2,7 +2,6 @@
 import React, { useEffect } from 'react';
 import Hero from '../components/Hero';
 import Services from '../components/Services';
-import FleetPreview from '../components/Fleet';
 import Testimonials from '../components/Testimonials';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Check } from 'lucide-react';
@@ -111,9 +110,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-      
-      {/* Fleet Section */}
-      <FleetPreview />
       
       {/* Testimonials Section */}
       <Testimonials />
