@@ -1,8 +1,8 @@
-
 import React, { useEffect } from 'react';
 import Hero from '../components/Hero';
 import Services from '../components/Services';
 import Testimonials from '../components/Testimonials';
+import BookingForm from '../components/BookingForm';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Check } from 'lucide-react';
 
@@ -15,6 +15,20 @@ const Index = () => {
     <main className="min-h-screen">
       {/* Hero Section */}
       <Hero />
+      
+      {/* Booking Form Section */}
+      <section className="py-24 bg-black relative overflow-hidden">
+        <div className="luxury-container relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="section-heading">Book Your Ride</h2>
+            <p className="section-subheading">
+              Reserve your professional chauffeur service with ease
+            </p>
+          </div>
+          
+          <BookingForm />
+        </div>
+      </section>
       
       {/* Services Section */}
       <Services />
@@ -113,48 +127,6 @@ const Index = () => {
       
       {/* Testimonials Section */}
       <Testimonials />
-      
-      {/* CTA Section */}
-      <section className="py-24 bg-black relative overflow-hidden">
-        {/* Decorative elements */}
-        <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-luxury-dark to-transparent"></div>
-        <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-luxury-dark to-transparent"></div>
-        
-        <div className="luxury-container relative z-10">
-          <div className="glass-card rounded-xl overflow-hidden">
-            <div className="grid grid-cols-1 lg:grid-cols-2">
-              <div className="p-8 md:p-12 xl:p-16 flex flex-col justify-center">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                  <span className="gold-gradient-text">Ready to Experience</span><br />
-                  <span className="text-white">Unparalleled Luxury?</span>
-                </h2>
-                
-                <p className="text-muted-foreground mb-8 max-w-md">
-                  Book your premium ride today and elevate your transportation experience. Our professional team is ready to provide you with exceptional service.
-                </p>
-                
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Link to="/booking" className="gold-button">
-                    Book Your Ride
-                  </Link>
-                  <Link to="/contact" className="ghost-button">
-                    Contact Us
-                  </Link>
-                </div>
-              </div>
-              
-              <div className="relative h-64 lg:h-auto">
-                <img 
-                  src="https://images.unsplash.com/photo-1635073908681-b3b8513261a1?q=80&w=2069&auto=format&fit=crop" 
-                  alt="Luxury car interior" 
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent lg:hidden"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
   );
 };
