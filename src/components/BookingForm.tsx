@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Calendar, Clock, MapPin, Users, Car, ChevronDown, Check } from 'lucide-react';
+import { Calendar, Clock, MapPin, Users, Check } from 'lucide-react';
 import { toast } from 'sonner';
 
 const BookingForm = () => {
@@ -10,7 +10,6 @@ const BookingForm = () => {
     date: '',
     time: '',
     passengers: '1',
-    vehicle: '',
     name: '',
     email: '',
     phone: '',
@@ -72,7 +71,6 @@ const BookingForm = () => {
         date: '',
         time: '',
         passengers: '1',
-        vehicle: '',
         name: '',
         email: '',
         phone: '',
@@ -81,12 +79,6 @@ const BookingForm = () => {
       setStep(1);
     }, 1500);
   };
-
-  const vehicles = [
-    { id: 'mercedes-s-class', name: 'Mercedes-Benz S-Class', price: '£120' },
-    { id: 'bmw-7', name: 'BMW 7 Series', price: '£110' },
-    { id: 'mercedes-v-class', name: 'Mercedes-Benz V-Class', price: '£150' },
-  ];
 
   return (
     <div className="glass-card rounded-xl overflow-hidden w-full max-w-4xl mx-auto">
@@ -208,60 +200,27 @@ const BookingForm = () => {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="relative">
+                  <label htmlFor="passengers" className="block mb-2 font-medium">
+                    Passengers
+                  </label>
                   <div className="relative">
-                    <label htmlFor="passengers" className="block mb-2 font-medium">
-                      Passengers
-                    </label>
-                    <div className="relative">
-                      <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground">
-                        <Users className="h-5 w-5" />
-                      </span>
-                      <select
-                        id="passengers"
-                        name="passengers"
-                        value={formData.passengers}
-                        onChange={handleChange}
-                        className="luxury-input pl-10 appearance-none"
-                      >
-                        {[1, 2, 3, 4, 5, 6, 7].map((num) => (
-                          <option key={num} value={num}>
-                            {num} {num === 1 ? 'passenger' : 'passengers'}
-                          </option>
-                        ))}
-                      </select>
-                      <span className="absolute right-3 top-1/2 transform -translate-y-1/2 text-muted-foreground pointer-events-none">
-                        <ChevronDown className="h-5 w-5" />
-                      </span>
-                    </div>
-                  </div>
-                  
-                  <div className="relative">
-                    <label htmlFor="vehicle" className="block mb-2 font-medium">
-                      Preferred Vehicle
-                    </label>
-                    <div className="relative">
-                      <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground">
-                        <Car className="h-5 w-5" />
-                      </span>
-                      <select
-                        id="vehicle"
-                        name="vehicle"
-                        value={formData.vehicle}
-                        onChange={handleChange}
-                        className="luxury-input pl-10 appearance-none"
-                      >
-                        <option value="">Select a vehicle</option>
-                        {vehicles.map((vehicle) => (
-                          <option key={vehicle.id} value={vehicle.id}>
-                            {vehicle.name} - {vehicle.price}
-                          </option>
-                        ))}
-                      </select>
-                      <span className="absolute right-3 top-1/2 transform -translate-y-1/2 text-muted-foreground pointer-events-none">
-                        <ChevronDown className="h-5 w-5" />
-                      </span>
-                    </div>
+                    <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground">
+                      <Users className="h-5 w-5" />
+                    </span>
+                    <select
+                      id="passengers"
+                      name="passengers"
+                      value={formData.passengers}
+                      onChange={handleChange}
+                      className="luxury-input pl-10 appearance-none"
+                    >
+                      {[1, 2, 3, 4, 5, 6, 7].map((num) => (
+                        <option key={num} value={num}>
+                          {num} {num === 1 ? 'passenger' : 'passengers'}
+                        </option>
+                      ))}
+                    </select>
                   </div>
                 </div>
               </div>
@@ -400,6 +359,10 @@ const BookingForm = () => {
                         <Clock className="h-5 w-5 text-gold-500 shrink-0" />
                         <span>{formData.time}</span>
                       </li>
+                      <li className="flex items-center gap-2">
+                        <Users className="h-5 w-5 text-gold-500 shrink-0" />
+                        <span>{formData.passengers} {Number(formData.passengers) === 1 ? 'passenger' : 'passengers'}</span>
+                      </li>
                     </ul>
                   </div>
                   
@@ -414,21 +377,12 @@ const BookingForm = () => {
                 </div>
                 
                 <div>
-                  <h4 className="text-lg font-bold">Additional Details</h4>
-                  <ul className="mt-2 space-y-2">
-                    <li><strong>Passengers:</strong> {formData.passengers}</li>
-                    <li>
-                      <strong>Vehicle:</strong>{' '}
-                      {formData.vehicle
-                        ? vehicles.find((v) => v.id === formData.vehicle)?.name || formData.vehicle
-                        : 'No preference'}
-                    </li>
-                    {formData.specialRequirements && (
-                      <li>
-                        <strong>Special Requirements:</strong> {formData.specialRequirements}
-                      </li>
-                    )}
-                  </ul>
+                  {formData.specialRequirements && (
+                    <div>
+                      <h4 className="text-lg font-bold">Special Requirements</h4>
+                      <p className="mt-2">{formData.specialRequirements}</p>
+                    </div>
+                  )}
                 </div>
               </div>
               
