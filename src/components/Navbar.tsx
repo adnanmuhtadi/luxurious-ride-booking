@@ -22,50 +22,51 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
-    // Close mobile menu when route changes
-    setIsMenuOpen(false);
-  }, [location.pathname]);
+  useEffect(
+    () => {
+      // Close mobile menu when route changes
+      setIsMenuOpen(false);
+    },
+    [location.pathname]
+  );
 
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Services", path: "/services" },
     { name: "Contact", path: "/contact" }
   ];
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-luxury-dark/95 backdrop-blur-md py-2 shadow-md" : "bg-transparent py-4"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+        ? "bg-luxury-dark/95 backdrop-blur-md py-2 shadow-md"
+        : "bg-transparent py-4"}`}
     >
       <div className="luxury-container flex items-center justify-between">
-        <Link 
-          to="/" 
+        <Link
+          to="/"
           className="flex items-center gap-2 text-2xl font-bold font-serif"
         >
-          <span className="gold-gradient-text">LUXE</span>
-          <span className="text-white">RIDES</span>
+          <span className="gold-gradient-text">Benz</span>
+          <span className="text-white">Cabz</span>
         </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
           <ul className="flex gap-6">
-            {navLinks.map((link) => (
+            {navLinks.map(link =>
               <li key={link.name}>
                 <Link
                   to={link.path}
-                  className={`link-underline py-2 transition-colors ${
-                    location.pathname === link.path
-                      ? "text-gold-500"
-                      : "text-foreground hover:text-gold-500"
-                  }`}
+                  className={`link-underline py-2 transition-colors ${location.pathname ===
+                  link.path
+                    ? "text-gold-500"
+                    : "text-foreground hover:text-gold-500"}`}
                 >
                   {link.name}
                 </Link>
               </li>
-            ))}
+            )}
           </ul>
           <Link to="/booking" className="gold-button flex items-center gap-2">
             <span>Book Now</span>
@@ -89,28 +90,26 @@ const Navbar = () => {
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
-          {isMenuOpen ? (
-            <X className="h-6 w-6" />
-          ) : (
-            <Menu className="h-6 w-6" />
-          )}
+          {isMenuOpen
+            ? <X className="h-6 w-6" />
+            : <Menu className="h-6 w-6" />}
         </button>
 
         {/* Mobile Menu */}
         <div
-          className={`fixed inset-0 z-50 md:hidden bg-luxury-black transition-transform duration-300 ease-in-out ${
-            isMenuOpen ? "translate-x-0" : "translate-x-full"
-          }`}
+          className={`fixed inset-0 z-50 md:hidden bg-luxury-black transition-transform duration-300 ease-in-out ${isMenuOpen
+            ? "translate-x-0"
+            : "translate-x-full"}`}
         >
           <div className="flex flex-col h-full overflow-y-auto p-6">
             <div className="flex justify-between items-center mb-8">
-              <Link 
-                to="/" 
+              <Link
+                to="/"
                 className="flex items-center gap-2 text-2xl font-bold font-serif"
                 onClick={toggleMenu}
               >
-                <span className="gold-gradient-text">LUXE</span>
-                <span className="text-white">RIDES</span>
+                <span className="gold-gradient-text">Benz</span>
+                <span className="text-white">Cabz</span>
               </Link>
               <button
                 className="text-foreground p-2"
@@ -121,24 +120,23 @@ const Navbar = () => {
               </button>
             </div>
             <ul className="flex flex-col gap-4 mb-8">
-              {navLinks.map((link) => (
+              {navLinks.map(link =>
                 <li key={link.name}>
                   <Link
                     to={link.path}
-                    className={`block py-3 text-lg font-medium border-b border-gold-500/20 ${
-                      location.pathname === link.path
-                        ? "text-gold-500"
-                        : "text-foreground"
-                    }`}
+                    className={`block py-3 text-lg font-medium border-b border-gold-500/20 ${location.pathname ===
+                    link.path
+                      ? "text-gold-500"
+                      : "text-foreground"}`}
                     onClick={toggleMenu}
                   >
                     {link.name}
                   </Link>
                 </li>
-              ))}
+              )}
             </ul>
-            <Link 
-              to="/booking" 
+            <Link
+              to="/booking"
               className="gold-button text-center mb-6"
               onClick={toggleMenu}
             >

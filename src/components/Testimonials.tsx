@@ -16,7 +16,7 @@ const testimonials = [
     name: 'Emily Richardson',
     position: 'Event Manager',
     image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2076&auto=format&fit=crop',
-    quote: 'We use Luxe Rides for all our corporate events. The consistency and quality of service is unmatched. Highly recommended for business travel.',
+    quote: 'We use BenzCabz for all our corporate events. The consistency and quality of service is unmatched. Highly recommended for business travel.',
     rating: 5,
   },
   {
@@ -32,7 +32,7 @@ const testimonials = [
     name: 'Sarah Johnson',
     position: 'Marketing Executive',
     image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop',
-    quote: 'The attention to detail and personal service is what sets Luxe Rides apart. From the moment you book until drop-off, everything is handled with care.',
+    quote: 'The attention to detail and personal service is what sets BenzCabz apart. From the moment you book until drop-off, everything is handled with care.',
     rating: 5,
   },
 ];
