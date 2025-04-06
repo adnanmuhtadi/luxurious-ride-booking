@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Calendar, Clock, MapPin, Users, Car, ChevronDown, Check } from 'lucide-react';
 import { toast } from 'sonner';
@@ -62,7 +63,7 @@ const BookingForm = () => {
     // Simulate API call
     setTimeout(() => {
       setIsSubmitting(false);
-      toast.success('Booking request submitted successfully! A confirmation has been sent to our team.');
+      toast.success('Booking request submitted successfully! A confirmation has been sent to adnanmuhtadi@hotmail.com.');
       
       // Reset form
       setFormData({

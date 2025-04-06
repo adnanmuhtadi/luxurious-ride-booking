@@ -34,6 +34,8 @@ const ContactForm = () => {
     setTimeout(() => {
       setIsSubmitting(false);
       toast.success('Message sent successfully! We will get back to you soon.');
+      console.log('Contact form submission to: adnanmuhtadi@hotmail.com');
+      console.log('Form data:', formData);
       
       // Reset form
       setFormData({
