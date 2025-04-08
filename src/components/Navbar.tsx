@@ -80,7 +80,7 @@ const Navbar = () => {
             className="flex items-center gap-2 text-gold-500 hover:text-gold-400 transition-colors"
           >
             <PhoneCall className="h-4 w-4" />
-            <span className="font-medium">+44 07123 456789</span>
+            <span className="font-medium">+44 07902 394939</span>
           </a>
         </div>
 
