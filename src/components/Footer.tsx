@@ -27,6 +27,7 @@ const Footer = () => {
               Providing premium executive transportation services with
               uncompromising luxury, reliability, and discretion.
             </p>
+            /**dsfalfd */
             <div className="flex space-x-4">
               <a
                 href="https://instagram.com"
@@ -68,162 +69,108 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-bold mb-6">Quick Links</h3>
+            <h3 className="text-lg font-bold mb-6">Covered Areas</h3>
             <ul className="space-y-3">
               <li>
                 <Link
                   to="/"
                   className="text-muted-foreground hover:text-gold-500 transition-colors"
                 >
-                  Home
+                  Watford
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/about"
+                  to="/"
                   className="text-muted-foreground hover:text-gold-500 transition-colors"
                 >
-                  About Us
+                  Hemel Hempstead
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/services"
+                  to="/"
                   className="text-muted-foreground hover:text-gold-500 transition-colors"
                 >
-                  Services
+                  Kings Langley
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/fleet"
+                  to="/"
                   className="text-muted-foreground hover:text-gold-500 transition-colors"
                 >
-                  Our Fleet
+                  Abbotts Langley
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/booking"
+                  to="/"
                   className="text-muted-foreground hover:text-gold-500 transition-colors"
                 >
-                  Book Now
+                  Berkhamsted
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/contact"
+                  to="/"
                   className="text-muted-foreground hover:text-gold-500 transition-colors"
                 >
-                  Contact Us
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-bold mb-6">Services</h3>
-            <ul className="space-y-3">
-              <li>
-                <Link
-                  to="/services"
-                  className="text-muted-foreground hover:text-gold-500 transition-colors"
-                >
-                  Airport Transfers
+                  Tring
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/services"
+                  to="/"
                   className="text-muted-foreground hover:text-gold-500 transition-colors"
                 >
-                  Corporate Travel
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services"
-                  className="text-muted-foreground hover:text-gold-500 transition-colors"
-                >
-                  Wedding Transportation
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services"
-                  className="text-muted-foreground hover:text-gold-500 transition-colors"
-                >
-                  Hourly Chauffeur
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services"
-                  className="text-muted-foreground hover:text-gold-500 transition-colors"
-                >
-                  VIP Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services"
-                  className="text-muted-foreground hover:text-gold-500 transition-colors"
-                >
-                  City Tours
+                  St.Albans
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-lg font-bold mb-6">Services</h3>
+            <h3 className="text-lg font-bold mb-6">Airports</h3>
             <ul className="space-y-3">
               <li>
                 <Link
-                  to="/services"
+                  to="/"
                   className="text-muted-foreground hover:text-gold-500 transition-colors"
                 >
-                  Airport Transfers
+                  Heathrow Airport
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/services"
+                  to="/"
                   className="text-muted-foreground hover:text-gold-500 transition-colors"
                 >
-                  Corporate Travel
+                  Gatwick Airport
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/services"
+                  to="/"
                   className="text-muted-foreground hover:text-gold-500 transition-colors"
                 >
-                  Wedding Transportation
+                  Stanstead Airport
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/services"
+                  to="/"
                   className="text-muted-foreground hover:text-gold-500 transition-colors"
                 >
-                  Hourly Chauffeur
+                  Luton Airport
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/services"
+                  to="/"
                   className="text-muted-foreground hover:text-gold-500 transition-colors"
                 >
-                  VIP Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services"
-                  className="text-muted-foreground hover:text-gold-500 transition-colors"
-                >
-                  City Tours
+                  London City Aiport
                 </Link>
               </li>
             </ul>
