@@ -64,6 +64,20 @@ const Hero = () => {
             punctual, and professional.
           </p>
 
+          <p className="mx-auto max-w-2xl text-lg md:text-xl text-muted-foreground mb-10 animate-fade-in">
+            Areas we cover: Watford, Hemel Hempstead, Kings langley, Abbotts
+            langley, Berkhamsted, Tring, St Albans
+          </p>
+
+          <p className="mx-auto max-w-2xl text-lg md:text-xl text-muted-foreground mb-10 animate-fade-in">
+            Airports we cover: Heathrow Airport, Gatwick Airport, Stanstead
+            Airport, Luton Airport, London City Airport
+          </p>
+
+          <p className="mx-auto max-w-2xl text-lg md:text-xl text-muted-foreground mb-10 animate-fade-in">
+            No job is too big or too small.
+          </p>
+
           {/* Removed "Book Your Ride" button
           <div className="flex justify-center animate-fade-in">
             <Link to="/fleet" className="ghost-button">
