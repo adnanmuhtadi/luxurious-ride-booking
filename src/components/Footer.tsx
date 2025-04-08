@@ -27,47 +27,6 @@ const Footer = () => {
               Providing premium executive transportation services with
               uncompromising luxury, reliability, and discretion.
             </p>
-            
-            /** 
-            <div className="flex space-x-4">
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-muted rounded-full p-2 text-muted-foreground hover:bg-gold-500 hover:text-luxury-black transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-muted rounded-full p-2 text-muted-foreground hover:bg-gold-500 hover:text-luxury-black transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-muted rounded-full p-2 text-muted-foreground hover:bg-gold-500 hover:text-luxury-black transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-muted rounded-full p-2 text-muted-foreground hover:bg-gold-500 hover:text-luxury-black transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="h-5 w-5" />
-              </a>
-            </div>
-            */
           </div>
 
           <div>
