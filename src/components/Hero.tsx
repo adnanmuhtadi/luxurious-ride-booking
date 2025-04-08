@@ -64,12 +64,13 @@ const Hero = () => {
             punctual, and professional.
           </p>
 
-          {/* Removed "Book Your Ride" button */}
+          {/* Removed "Book Your Ride" button
           <div className="flex justify-center animate-fade-in">
             <Link to="/fleet" className="ghost-button">
               Explore Our Fleet
             </Link>
           </div>
+          */}
         </div>
       </div>
 
