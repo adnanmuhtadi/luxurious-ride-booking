@@ -186,7 +186,7 @@ const ContactForm = () => {
                 href="tel:+447902394939"
                 className="text-gold-500 hover:text-gold-400 transition-colors"
               >
-                +44 7902 394939
+                +44 07522 876696
               </a>
             </div>
           </div>
@@ -202,7 +202,7 @@ const ContactForm = () => {
                 href="mailto:Benzcabz@gmail.com"
                 className="text-gold-500 hover:text-gold-400 transition-colors"
               >
-                Benzcabz@gmail.com
+                Benzcabz247@gmail.com
               </a>
             </div>
           </div>
