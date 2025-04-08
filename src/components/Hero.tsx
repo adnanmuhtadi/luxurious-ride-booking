@@ -53,7 +53,9 @@ const Hero = () => {
             <span className="text-white">Chauffeur</span>
             <br />
             <span className="text-white">Service in </span>
-            <span className="gold-gradient-text">Hemel Hempstead</span>
+            <span className="gold-gradient-text">
+              Watford and Hemel Hempstead
+            </span>
           </h1>
 
           <p className="mx-auto max-w-2xl text-lg md:text-xl text-muted-foreground mb-10 animate-fade-in">
