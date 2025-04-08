@@ -27,7 +27,8 @@ const Footer = () => {
               Providing premium executive transportation services with
               uncompromising luxury, reliability, and discretion.
             </p>
-            /**dsfalfd */
+            
+            /** 
             <div className="flex space-x-4">
               <a
                 href="https://instagram.com"
@@ -66,6 +67,7 @@ const Footer = () => {
                 <Twitter className="h-5 w-5" />
               </a>
             </div>
+            */
           </div>
 
           <div>
